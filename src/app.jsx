@@ -1,6 +1,6 @@
 import React from "react";
 import singleSpaReact from "single-spa-react";
-import ReactDom from "react-dom";
+import ReactDom from "react-dom/client";
 
 export default function App() {
   return (
