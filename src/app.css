@@ -1,3 +1,30 @@
 .mfeAppR {
   padding: 1px;
 }
+
+.navbar {
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid blue;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.navbar .navbar--item {
+  flex: 0 0 auto;
+  line-height: 100%;
+  padding: 16px 10px;
+}
+
+.navbar .navbar--link {
+  cursor: pointer;
+}
+
+.navbar .navbar--brand {
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 14px 40px;
+}

@@ -4,10 +4,33 @@ import ReactDom from "react-dom/client";
 
 import "./app.css";
 
-export default function App() {
+export default function App(props) {
+  console.log(props);
+
+  const navigate = (path) => {
+    window.history.pushState({}, "", path);
+  };
+
   return (
-    <div className="mfeAppR">
-      <h1>MFE APP R</h1>
+    <div className="navbar">
+      <div
+        className="navbar--item navbar--brand navbar--link"
+        onClick={() => navigate("/")}
+      >
+        MFE App R - React
+      </div>
+      <div
+        className="navbar--item navbar--link"
+        onClick={() => navigate("/mfeAppA")}
+      >
+        App A
+      </div>
+      <div
+        className="navbar--item navbar--link"
+        onClick={() => navigate("/mfeAppV")}
+      >
+        App V
+      </div>
     </div>
   );
 }
